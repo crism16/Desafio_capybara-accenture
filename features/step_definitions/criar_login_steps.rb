@@ -1,10 +1,8 @@
-############Carregar tela de login
 Dado('que vejo a pagina de login') do
     @sign_in = SignInPage.new
     @sign_in.load
 end
 
-############Criar uma conta válida
 Quando('colocar email {string}') do |email|
   @sign_in = SignInPage.new
 
